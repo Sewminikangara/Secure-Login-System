@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Light';
+    src: url(../Fonts/JetBrainsMono-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Heavy';
+    src: url(../Fonts/Panton-BlackCaps.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Light, Arial, Helvetica, sans-serif;
+    font-size: calc(0.3vw + 8px);
+    letter-spacing: 0.15ch;
+    color: rgb(176, 176, 176);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.819), rgba(0, 0, 0, 0)), url(../Images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+#logo {
+    position: absolute;
+    top: 10px;
+    width: 8vw;
+    height: 10vw;
+    background-image: url(../Images/Logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#container {
+    display: grid;
+    border-radius: 200px;
+    height: 90vh;
+    grid-template-columns: 25vw 25vw;
+}
+
+#picture {
+    border-radius: 20px;
+    position: relative;
+    background-color: #fff;
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5)), url(../Images/yokai.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-wrap: wrap;
+}
+
+#picture pre {
+    padding-top: 10%;
+    padding-left: 10%;
+    font-family: Heavy, Arial, Helvetica, sans-serif;
+    font-size: calc(2.8vw + 1px);
+    text-transform: none;
+    text-wrap: wrap;
+    color: white;
+}
+
+#picture p {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    font-family: Heavy;
+    font-size: calc(2vw + 1px);
+    text-transform: none;
+    text-wrap: wrap;
+    color: white;
+}
+
+form {
+    margin-left: 5px;
+    border-radius: 20px;
+    position: relative;
+    background-image: linear-gradient(180deg, rgba(14, 14, 0, 0.741),rgb(0, 0, 0),rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+input {
+    width: 80%;
+    height: 4ch;
+    padding: 20px 10px;
+    background-color: transparent;
+    border: 1px solid rgb(228, 132, 243);
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(90, 180, 244, 0.9);
+    color: rgb(128, 46, 145);
+    text-align: center;
+}
+
+input:focus {
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.9);
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(176, 176, 176);
+    text-transform: uppercase;
+}
+
+label {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(178, 166, 0);
+}
+
+a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+input[type=submit] {
+    width: fit-content;
+    background-color: rgb(213, 182, 227);
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+    padding: 7px 15px;
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+    background-color: transparent;
+    color: rgb(103, 165, 145);
+    cursor: pointer;
+    border: 1px solid rgb(39, 39, 29);
+}
+
+h1 {
+    font-size: calc(1vw + 15px);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: rgb(133, 152, 221);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(63, 144, 125, 0.9);
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+    padding: 10px 18px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid rgb(68, 145, 96);
+    color: rgb(159, 163, 101);
+    cursor: pointer;
+}
